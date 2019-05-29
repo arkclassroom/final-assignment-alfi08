@@ -1,30 +1,12 @@
-// $("#login").on("click", e =>{
-//     const username = $("#username").val()
-//     const password = $("#password").val()
+const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)username\s*\=\s*([^;]*).*$)|^.*$/, "$1")
 
-//     const data = JSON.stringify({email : username})
-    
-//     fetch("http://localhost:3000/users",{
-//         method: 'GET',
-//         headers: {
-//             'Accept': 'application/json, text/plain, */*',
-//             'Content-Type': 'application/json'
-//         },
-//         body: data
-
-//     })
-//     .then(res => res.json())
-//     .then(data => {
-//         console.log(data)
-//     })
-
-// })
+if(cookieValue){
+    window.location.href  = "/profile"
+}
 
 document.getElementById("login").addEventListener("click", e => {
     const username = $("#username").val()
     const password = $("#password").val()
-    
-    const data = JSON.stringify({email : username})
 
     fetch("http://localhost:3000/users/"+username)
     .then(res => res.json())
