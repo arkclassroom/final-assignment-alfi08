@@ -2,7 +2,6 @@ const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)username\s*\=\s*([^;
 
 if(!cookieValue){
     $(".container").html("")
-    alert("silahkan Login terlebih dahulu")
     window.location.href  = "/login"
 }
 
