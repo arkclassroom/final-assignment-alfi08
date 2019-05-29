@@ -1,0 +1,29 @@
+*{
+    margin: 0;padding: 0;
+}
+
+#bag_menu a {
+    margin: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.container{
+    margin-top: 50px !important;
+    padding: 20px 0;
+    box-shadow: 1px 1px 3px 1px rgb(80, 80, 80);
+}
+
+.bag_konten, .bag_login,.bag_manage{
+    margin-top: 30px;
+}
+
+.card{
+    margin:10px 10px;
+}
+
+.card-title{
+    padding-top: 13px;
+}
+
